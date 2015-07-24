@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="page-header">
-        <h1>Delete {{ $game->title }} <small>Are you sure?</small></h1>
+        <h1>Deletes {{ $game->title }} <small>Are you sure?</small></h1>
     </div>
     <form action="{{ action('GamesController@handleDelete') }}" method="post" role="form">
         <input type="hidden" name="game" value="{{ $game->id }}" />
@@ -10,3 +10,4 @@
         <a href="{{ action('GamesController@index') }}" class="btn btn-default">No way!</a>
     </form>
 @stop
+
