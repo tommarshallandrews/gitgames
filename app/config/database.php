@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'games',
-			'username'  => 'tom',
-			'password'  => 'buzzer',
+			'host'      => 'mysql.welcometothenetwork.com',
+			'database'  => 'clpitch',
+			'username'  => 'clpitch',
+			'password'  => 'Jnwx63!7',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
