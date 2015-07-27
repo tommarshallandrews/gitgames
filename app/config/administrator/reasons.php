@@ -95,7 +95,7 @@ return array(
 		'image' => array(
     		'title' => 'Image',
     		'type' => 'image',
-    		'location' => public_path() . '/images/',
+    		'location' => public_path() . '/uploads/',
     		'naming' => 'keep',
     		'length' => 20,
     		'size_limit' => 20,
