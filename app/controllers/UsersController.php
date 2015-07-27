@@ -130,7 +130,7 @@ class UsersController extends BaseController {
 				}
 
 
-			return Redirect::to('users/dashboard')->with('message', 'You are now logged in!');
+			return Redirect::to('/')->with('message', 'You are now logged in!');
 
 		} else {
 			return Redirect::to('users/login')

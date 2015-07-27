@@ -51,4 +51,13 @@ Route::controller('password', 'RemindersController');
 
 
 
+Route::get('/logout', function()
+  {
+ Auth::logout();
+return View::make('users/login');
+  });
+
+
+
+
 

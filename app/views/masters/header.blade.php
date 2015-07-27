@@ -59,7 +59,7 @@
 
     <div class="navbar-header">
             <a class=" pull-left" href="/" title="Home">
-        <img src="uploads/{{$pitch->image}}" alt="Home" />
+        <img src="/gitgames/public/uploads/{{$pitch->image}}" alt="Home" />
       </a>
       
     </div>

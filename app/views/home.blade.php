@@ -98,7 +98,7 @@
     
   <div class="col-sm-6">
      <div class="nodewrap__teaser">
-     <a href="document" class="nodewrap__title--link"></a>
+     <a href="documents" class="nodewrap__title--link"></a>
               <div class="nodewrap__title">
       <h3 property="dc:title" datatype="">Pitch Document</h3>
       </div>

@@ -1,5 +1,5 @@
 
-@include('masters.unregistered')
+@include('masters.header')
 
 
 <script>
@@ -60,12 +60,12 @@ if(response == 1){
  <div id="signupbox" style="display; margin-top:50px" class="mainbox col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <div class="panel-title">Please register to save your creations.</div>
+                            <div class="panel-title">Please register here.</div>
                             <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>
                         </div>  
                         <div class="panel-body" >
 
-                              {{ Form::open(array('url'=>'users/create', 'class'=>'form-horizontal', 'id'=>'signupform', 'role'=>'form')) }}
+                              {{ Form::open(array('url'=>'users/login', 'class'=>'form-horizontal', 'id'=>'signupform', 'role'=>'form')) }}
                                 
                                 @if(Session::has('errors'))
                                 <div id="signupalert" style="display" class="alert alert-danger">
@@ -87,18 +87,7 @@ if(response == 1){
                                     </div>
                                 </div>
                                     
-                                <div class="form-group">
-                                    <label for="username" class="col-md-3 control-label">Public name</label>
-                                    <div class="col-md-7">
 
-                                        <input type="text" class="form-control" id="username" name="username" placeholder="Other users will see this by any public creations">
-                                    </div>
-                                       <div class="col-md-2">
-                                    <span id="short"class="glyphicon glyphicon-remove large"> Too short</span>
-                                    <span id="taken"class="glyphicon glyphicon-remove large"> Taken</span>
-                                     <span id="ok"class="glyphicon glyphicon-ok large"> OK</span>
-                                    </div>
-                                </div>
   
                                 <div class="form-group">
                                     <label for="password" class="col-md-3 control-label">Password</label>

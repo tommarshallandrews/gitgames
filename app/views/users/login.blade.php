@@ -1,6 +1,6 @@
 
 
- @include('masters.unregistered') 
+ @include('masters.header') 
 
 
 
@@ -8,7 +8,7 @@
             <div class="panel panel-default" >
                     <div class="panel-heading">
                         <div class="panel-title">Sign In</div>
-                        <div style="float:right; font-size: 90%; position: relative; top:-10px"><a href="{{ url('/password/remind') }}">Forgot password?</a></div>
+                        <div style="float:right; font-size: 90%; position: relative; top:-10px"><a href="{{ url('/password/remind') }}"></a></div>
                     </div>     
 
                     <div style="padding-top:30px" class="panel-body" >
@@ -31,13 +31,7 @@
                                     
 
                                 
-                            <div class="input-group">
-                                      <div class="checkbox">
-                                        <label>
-                                          <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
-                                        </label>
-                                      </div>
-                                    </div>
+ 
 
 
                                 <div style="margin-top:10px" class="form-group">
@@ -51,16 +45,7 @@
                                 </div>
 
 
-                                <div class="form-group">
-                                    <div class="col-md-12 control">
-                                        <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
-                                            Don't have an account! 
-                                        <a href="{{ url('/users/register') }}">
-                                            Sign Up Here
-                                        </a>
-                                        </div>
-                                    </div>
-                                </div>    
+      
                            {{ Form::close() }}   
 
 
