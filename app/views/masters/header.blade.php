@@ -35,19 +35,23 @@
 <link type="text/css" rel="stylesheet" href="http://www.axa-anewlevel.co.uk/sites/clpitch.vded-ll-003.servers.wirehive.net/files/css/css_oruJMom7LCR6yvpWFsbzlJZQX39DyL30nPvKhwU9i_A.css" media="all" />
 
 
+<link type="text/css" rel="stylesheet" href="css/local.css" media="all" />
+
 
   <!-- HTML5 element support for IE6-8 -->
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <script src="http://www.axa-anewlevel.co.uk/sites/clpitch.vded-ll-003.servers.wirehive.net/files/js/js_YWHVd5xyXCesOAUqLr7xvfnoMBKLYQU6OIH_tIqjDzI.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-<script src="http://www.axa-anewlevel.co.uk/sites/clpitch.vded-ll-003.servers.wirehive.net/files/js/js_kfRzIWRrtHhyOkYfWE5QJ4QsU28i_Wl5_qpkp374O4Q.js"></script>
-<script src="http://www.axa-anewlevel.co.uk/sites/all/modules/lightbox2/js/lightbox.js?1437662915"></script>
-<script src="http://www.axa-anewlevel.co.uk/sites/clpitch.vded-ll-003.servers.wirehive.net/files/js/js_kf_iBLzGgb_h3fWbEvxK5fEQ-YvVKc__tZPm492-w1s.js"></script>
-<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-320159-22", {"cookieDomain":".axa-anewlevel.co.uk"});ga("require", "linkid", "linkid.js");ga("require", "displayfeatures");ga("send", "pageview");</script>
-<script src="http://www.axa-anewlevel.co.uk/sites/clpitch.vded-ll-003.servers.wirehive.net/files/js/js_TYa0wKrYE5WO6QtKzAZyTlw-MufUHZhxKHkUnJB2x6U.js"></script>
 
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-320159-22", {"cookieDomain":".axa-anewlevel.co.uk"});ga("require", "linkid", "linkid.js");ga("require", "displayfeatures");ga("send", "pageview");</script>
+
+
+
+
+
+<script src="js/scriptsx.js"></script>
 </head>
 <body class="html not-front not-logged-in no-sidebars page-pledges" >
   <div id="skip-link">
