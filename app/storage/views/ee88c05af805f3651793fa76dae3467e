@@ -1,0 +1,43 @@
+<?php $__env->startSection('content'); ?>
+    <div class="page-header">
+        <h1>All Games <small>Gotta catch 'em all!</small></h1>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <a href="<?php echo action('GamesController@create'); ?>" class="btn btn-primary">Create Game</a>
+        </div>
+    </div>
+
+    <?php if($games->isEmpty()): ?>
+        <p>There are no games! :(</p>
+    <?php else: ?>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Publisher</th>
+                    <th>Description</th>
+					<th>Complete</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach($games as $game): ?>
+                <tr>
+                    <td><?php echo $game->title; ?></td>
+                    <td><?php echo $game->publisher; ?></td>
+					<td><?php echo $game->description; ?></td>
+                    <td><?php echo $game->complete ? 'Yes' : 'No'; ?></td>
+                    <td>
+                        <a href="<?php echo action('GamesController@edit', $game->id); ?>" class="btn btn-default">Edit</a>
+                        <a href="<?php echo action('GamesController@delete', $game->id); ?>" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    <?php endif; ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

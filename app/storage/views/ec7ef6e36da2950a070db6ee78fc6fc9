@@ -1,0 +1,12 @@
+<?php $__env->startSection('content'); ?>
+    <div class="page-header">
+        <h1>Delete <?php echo $game->title; ?> <small>Are you sure?</small></h1>
+    </div>
+    <form action="<?php echo action('GamesController@handleDelete'); ?>" method="post" role="form">
+        <input type="hidden" name="game" value="<?php echo $game->id; ?>" />
+        <input type="submit" class="btn btn-danger" value="Yes" />
+        <a href="<?php echo action('GamesController@index'); ?>" class="btn btn-default">No way!</a>
+    </form>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

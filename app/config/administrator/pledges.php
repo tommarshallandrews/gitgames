@@ -95,10 +95,7 @@ return array(
     		'size_limit' => 20,
 		),
 
-    	 'position' => array(
-			'title' => 'Position',
-    		'type' => 'text',
-    	),
+
     	 'position' => array(
 		    'type' => 'enum',
 		    'title' => 'Position',

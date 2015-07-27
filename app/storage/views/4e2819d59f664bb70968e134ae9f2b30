@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Games Collection</title>
+    <link rel="stylesheet" href="<?php echo asset('css/bootstrap.min.css'); ?>" />
+    <link rel="stylesheet" href="<?php echo asset('css/local.css'); ?>" />
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <a href="<?php echo action('GamesController@index'); ?>" class="navbar-brand">Games Collection</a>
+            </div>
+        </nav>
+        <?php echo $__env->yieldContent('content'); ?>
+    </div>
+</body>
+</html>

@@ -6,11 +6,11 @@
 
 return array(
 
-	'title' => 'Why CL',
+	'title' => 'Pitch Documents',
 
-	'single' => 'reason',
+	'single' => 'document',
 
-	'model' => 'Reason',
+	'model' => 'Document',
 
 	 'form_width' => 600,
 
@@ -20,6 +20,8 @@ return array(
 
 	'columns' => array(
 		
+
+
 		'pitch' => array(
 			'title' => 'Pitch',
 			'relationship' => 'pitch',
@@ -44,6 +46,7 @@ return array(
 
 
 
+
 		'pitch' => array(
     		'type' => 'relationship',
     		'title' => 'Pitch',
@@ -51,12 +54,11 @@ return array(
     	),
 
 		'title' => array(
-			'title' => 'Title',
+			'title' => 'Pledge Title',
 		),
 
-
 		'updated_at' => array(
-			'title' => 'Order Updated',
+			'title' => 'Updated',
 			'type' => 'date',
 			'date_format' => 'yy-mm-dd',
 		),
@@ -73,13 +75,13 @@ return array(
 	 */
 	'edit_fields' => array(
 
+
+
 		'pitch' => array(
     		'type' => 'relationship',
     		'title' => 'Pitch',
     		'name_field' => 'title', //what column or accessor on the other table you want to use to represent this object
     	),
-
-
 
     	'title' => array(
 			'title' => 'Title',
@@ -93,21 +95,19 @@ return array(
 		),
 
 
-    	'text' => array(
-			'title' => 'Text',
-    		'type' => 'textarea',
-    		'height' => 130, //optional, defaults to 100
-    	),
-
-
-		'image' => array(
-    		'title' => 'Image',
-    		'type' => 'image',
-    		'location' => public_path() . '/uploads/',
-    		'naming' => 'keep',
-    		'length' => 20,
-    		'size_limit' => 20,
+    	   'file' => array(
+		    'type' => 'file',
+		    'location' => public_path() . '/uploads/',
+		    'naming' => 'keep',
+		    'length' => 20,
+		    'size_limit' => 2,
+		    'mimes' => 'pdf,psd,doc',
 		),
+
+
+
+
+
 
  
     	'created_at' => array(

@@ -13,41 +13,40 @@
 |
 */
 
-// Bind route parameters.
-Route::model('game', 'Game');
-Route::model('help', 'Help');
 
-// Show pages.
-Route::get('/', 'GamesController@index');
-Route::get('/help', 'GamesController@helpList');
-Route::get('/makeHelp', 'GamesController@makeHelp');
-Route::get('/help/{help}', 'GamesController@help');
-Route::get('/create', 'GamesController@create');
-Route::get('/edit/{game}', 'GamesController@edit');
-Route::get('/delete/{game}', 'GamesController@delete');
+Session::put('pitch', '4');
 
 
-// Handle form submissions.
-Route::post('/create', 'GamesController@handleCreate');
-Route::post('/edit', 'GamesController@handleEdit');
-Route::post('/delete', 'GamesController@handleDelete');
-Route::post('/plusHelp', 'GamesController@plusHelp');
-Route::get('/makeHelp', 'GamesController@handleMakeHelp');
-
-
-
-Route::get('/users', function()
+Route::group(array('domain' => '{user}.myapp.dev'), function()
 {
-    $users = User::with('games')->get();
-    return $users;
+    Route::get('profile/{page}', function($user, $page) {
+        // ...
+    });
 });
 
 
-Route::get('/games', function()
+
+View::composer('masters.header', function($view)
 {
-    $games = Game::with('user')->get();
-    return $games;
+    $view->with('pitch', Pitch::find(Session::get('pitch')));
 });
+
+
+
+Route::resource('pledges', 'PledgesController');
+
+Route::resource('team', 'PitchersController');
+
+Route::resource('documents', 'DocumentController');
+
+Route::resource('reasons', 'ReasonsController');
+
+Route::resource('/', 'HomeController');
+
+
+Route::controller('users', 'UsersController', array('getLogin' => 'users.login'));
+
+Route::controller('password', 'RemindersController');
 
 
 

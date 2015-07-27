@@ -1,0 +1,21 @@
+<?php $__env->startSection('content'); ?>
+
+<table>
+ <?php foreach($helps as $help): ?>
+                <tr>
+                    <td><b><?php echo $help->title; ?></b></td>
+                    <td><?php echo $help->text; ?></td>
+                    <td>
+                        <a href="<?php echo action('GamesController@help', $help->id); ?>" class="btn btn-default">Edit</a>
+                        <a href="<?php echo action('GamesController@help', $help->id); ?>" class="btn btn-danger">Delete</a>
+                        <a href="<?php echo action('GamesController@plusHelp', $help->id); ?>" class="btn btn-default">Up</a>
+                    </td>
+                </tr>
+<?php endforeach; ?>
+ </table>               
+
+
+<?php $__env->stopSection(); ?>
+
+               
+<?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

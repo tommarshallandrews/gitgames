@@ -1,0 +1,9 @@
+<?php $__env->startSection('content'); ?>
+    <div class="page-header">
+        <h1>Hello</small></h1>
+    </div>
+    <h2>tom</h2>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
