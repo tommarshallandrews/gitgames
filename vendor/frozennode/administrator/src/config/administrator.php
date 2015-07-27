@@ -21,7 +21,7 @@ return array(
 	 *
 	 * @type string
 	 */
-	'model_config_path' => app('path') . '/config/administrator',
+	'model_config_path' => app('path') . '/config/administratorxx',
 
 	/**
 	 * The path to your settings config directory
