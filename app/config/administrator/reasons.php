@@ -27,7 +27,7 @@ return array(
 		),
 
 
-		'name' => array(
+		'title' => array(
 			'title' => 'Name',
 			'type' => 'text',
 		),
