@@ -53,7 +53,10 @@
 @foreach($documents as $document)
 
 <div class="field-item even" rel="" resource="uploads/{{$document->file}}">
-<span class="file"><img class="file-icon" alt="" title="application/pdf" src="/modules/file/icons/application-pdf.png"> <a href="uploads/{{$document->file}}" type="application/pdf; length=5153333">{{$document->title}}</a></span></div>
+<span class="file"><img class="file-icon" alt="" title="application/{{pathinfo($document->file, PATHINFO_EXTENSION);}}" src="file-type-icons/{{pathinfo($document->file, PATHINFO_EXTENSION);}}.png" height="24px" width="24px">
+
+  
+  <a href="uploads/{{$document->file}}" type="application/pdf; length=5153333">{{$document->title}}</a></span></div>
 
 
   @endforeach
