@@ -50,10 +50,6 @@ Route::get('/games', function()
 });
 
 
-Route::get('{username}', function($username)
-{
-    $user = User::with('games')->whereUsername($username)->first();
-    return $user;
-});
+
 
 

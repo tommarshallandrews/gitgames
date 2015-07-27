@@ -51,8 +51,19 @@ return array(
 			'database' => __DIR__.'/../database/production.sqlite',
 			'prefix'   => '',
 		),
-
+/*
 		'mysql' => array(
+			'driver'    => 'mysql',
+			'host'      => 'localhost',
+			'database'  => 'games',
+			'username'  => 'tom',
+			'password'  => 'buzzer',
+			'charset'   => 'utf8',
+			'collation' => 'utf8_unicode_ci',
+			'prefix'    => '',
+		),*/
+
+			'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'mysql.welcometothenetwork.com',
 			'database'  => 'clpitch',
