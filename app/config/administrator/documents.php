@@ -101,7 +101,7 @@ return array(
 		    'naming' => 'keep',
 		    'length' => 20,
 		    'size_limit' => 200,
-		    'mimes' => 'pdf,psd,doc',
+		    'mimes' => 'pdf,psd,doc,mov,mp4,xls,xlsx,docx',
 		),
 
 
