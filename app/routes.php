@@ -17,6 +17,8 @@
 Session::put('pitch', '4');
 
 
+
+
 Route::group(array('domain' => '{user}.myapp.dev'), function()
 {
     Route::get('profile/{page}', function($user, $page) {
@@ -62,3 +64,11 @@ Route::get('/logout', function()
 
 
 
+Route::group(array('domain' => '{user}.footprintflowers.co.uk'), function()
+{
+   return $user;
+
+    Route::get('profile', function($user, $page) {
+        // ...
+    });
+});
