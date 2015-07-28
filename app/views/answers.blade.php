@@ -1,20 +1,14 @@
- <?php echo $__env->make('masters.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?> 
+ @include('masters.header') 
 
  
 
-
-            	
-
-
-                
-                
      
                 
 
 
 
 
-<body class="html not-front not-logged-in no-sidebars page-pledges" >
+<body class="html not-front not-logged-in no-sidebars page-answers" >
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
   </div>
@@ -32,9 +26,6 @@
  </div>
 
   <header role="banner" id="page-header">
-
-
-
     
       </header> <!-- /#page-header -->
 
@@ -43,66 +34,80 @@
     
             
       
-<div class="view view-pledges view-id-pledges view-display-id-page view-dom-id-92251a88589ab9ad6bd17f6f17e2249a">
+<div class="view view-answers view-id-answers view-display-id-page view-dom-id-92251a88589ab9ad6bd17f6f17e2249a">
         
   
   
       <div class="view-content">
+        
+
+@foreach($answers as $answer)
 
 
-<div class="view-content">
         <div class="views-row views-row-1 views-row-odd views-row-first">
+        <div class="col-xl-12">
+    <div class="nodewrap__teaser--blog">
+     
+      <div class="col-xl-4">       
+         </div>
     
-  <div class="col-sm-6">
-     <div class="nodewrap__teaser">
-     <a href="answers" class="nodewrap__title--link"></a>
-              <div class="nodewrap__title">
-      <h3 property="dc:title" datatype="">Q&A</h3>
-      </div>
+    <div class="col-xl-8">
+    <div class="blog__title">
+       <h3 property="schema:name" datatype="">
+    {{$answer->title}} </h3> 
+
+    </div>    
+
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded">
         
-    <div class="field field-name-field-thumbnail-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even" rel="" resource="uploads/<?php echo $pitch->pledges_image; ?>"><img typeof="foaf:Image" src="uploads/<?php echo $pitch->pledges_image; ?>" width="480" height="350" alt=""></div></div></div><span property="dc:title" content="Pledges" class="rdf-meta"></span>    </div>
-  </div>
-  </div>
-  <div class="views-row views-row-2 views-row-even">
-    
-  <div class="col-sm-6">
-     <div class="nodewrap__teaser">
-     <a href="team" class="nodewrap__title--link"></a>
-              <div class="nodewrap__title">
-      <h3 property="dc:title" datatype="">The Pitch Team</h3>
-      </div>
+        @if (isset($answer->text))
+       {{$answer->text}}
+        @endif
         
-    <div class="field field-name-field-thumbnail-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even" rel="" resource="uploads/<?php echo $pitch->team_image; ?>"><img typeof="foaf:Image" src="uploads/<?php echo $pitch->team_image; ?>" width="480" height="350" alt=""></div></div></div><span property="dc:title" content="The Pitch Team" class="rdf-meta"></span>    </div>
-  </div>
-  </div>
-  <div class="views-row views-row-3 views-row-odd">
-    
-  <div class="col-sm-6">
-     <div class="nodewrap__teaser">
-     <a href="reasons" class="nodewrap__title--link"></a>
-              <div class="nodewrap__title">
-      <h3 property="dc:title" datatype="">Why Cunningham Lindsey</h3>
-      </div>
-        
-    <div class="field field-name-field-thumbnail-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even" rel="" resource="uploads/<?php echo $pitch->why_image; ?>"><img typeof="foaf:Image" src="uploads/<?php echo $pitch->why_image; ?>" width="480" height="350" alt=""></div></div></div><span property="dc:title" content="Why Cunningham Lindsey" class="rdf-meta"></span>    </div>
-  </div>
-  </div>
-  <div class="views-row views-row-4 views-row-even views-row-last">
-    
-  <div class="col-sm-6">
-     <div class="nodewrap__teaser">
-     <a href="documents" class="nodewrap__title--link"></a>
-              <div class="nodewrap__title">
-      <h3 property="dc:title" datatype="">Pitch Document</h3>
-      </div>
-        
-    <div class="field field-name-field-thumbnail-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even" rel="" resource="uploads/<?php echo $pitch->document_image; ?>"><img typeof="foaf:Image" src="uploads/<?php echo $pitch->document_image; ?>" width="480" height="350" alt=""></div></div></div><span property="dc:title" content="Pitch Document" class="rdf-meta"></span>    </div>
-  </div>
-  </div>
+        @if ($answer->file)
+        <div class="field-item even" rel="" resource="uploads/{{$answer->file}}">
+        <span class="file"><img class="file-icon" alt="" title="application/{{pathinfo($answer->file, PATHINFO_EXTENSION);}}" src="file-type-icons/{{pathinfo($answer->file, PATHINFO_EXTENSION);}}.png" height="24px" width="24px">
+        <a href="uploads/{{$answer->file}}" type="application/pdf; length=5153333">{{$answer->filetitle}}</a></span></div>
+        @endif
+
+
+        @if ($answer->file2)
+        <div class="field-item even" rel="" resource="uploads/{{$answer->file2}}">
+        <span class="file"><img class="file-icon" alt="" title="application/{{pathinfo($answer->file2, PATHINFO_EXTENSION);}}" src="file-type-icons/{{pathinfo($answer->file2, PATHINFO_EXTENSION);}}.png" height="24px" width="24px">
+        <a href="uploads/{{$answer->file2}}" type="application/pdf; length=5153333">{{$answer->filetitle2}}</a></span></div>
+        @endif
+
+
+        @if ($answer->file3)
+        <div class="field-item even" rel="" resource="uploads/{{$answer->file3}}">
+        <span class="file"><img class="file-icon" alt="" title="application/{{pathinfo($answer->file3, PATHINFO_EXTENSION);}}" src="file-type-icons/{{pathinfo($answer->file3, PATHINFO_EXTENSION);}}.png" height="24px" width="24px">
+        <a href="uploads/{{$answer->file3}}" type="application/pdf; length=5153333">{{$answer->filetitle3}}</a></span></div>
+        @endif
+
+
+        @if ($answer->file4)
+        <div class="field-item even" rel="" resource="uploads/{{$answer->file4}}">
+        <span class="file"><img class="file-icon" alt="" title="application/{{pathinfo($answer->file4, PATHINFO_EXTENSION);}}" src="file-type-icons/{{pathinfo($answer->file4, PATHINFO_EXTENSION);}}.png" height="24px" width="24px">
+        <a href="uploads/{{$answer->file4}}" type="application/pdf; length=5153333">{{$answer->filetitle4}}</a></span></div>
+        @endif
+
+       
+
+
+
+
+
+
+
+</div></div></div><span rel="schema:url" resource="/blog-entry/answer-1-well-put-customer-centre-everything-we-do" class="rdf-meta"></span><span property="schema:name" content="answer 1: We’ll put the customer at the centre of everything we do " class="rdf-meta"></span>   
     </div>
+    </div>
+  </div>
+  </div>
+  
 
 
-
+  @endforeach
   
   
   
@@ -125,7 +130,7 @@
 </footer>
   <script src="http://www.axa-anewlevel.co.uk/sites/clpitch.vded-ll-003.servers.wirehive.net/files/js/js_h5pUc2x9Uh8Pl1QqK1Xj-8G295EapUWRnbPNEp5xuvA.js"></script>
 <script>
-    jQuery(document).ready(function($) {
+    jQuery(answer).ready(function($) {
     cookieControl({
         introText: '<p>This site uses cookies to store information on your computer.</p>',
         fullText: '<p>Some cookies used by this website are essential, and the website won\'t work as intended without them. These cookies are set when you submit a form, login or interact with the website by doing something that goes beyond clicking on simple links.</p><p>We also use <a href=\"http://www.google.com/analytics/learn/privacy.html\" target=\"_blank\">Google Analytics cookies</a> to anonymously track visitors.</p><p>By using our site you accept the terms of our <a href="/privacy-policy">Privacy Policy</a>.',
@@ -162,13 +167,5 @@ cc.setCookie('ccShowCookieIcon', 'no');jQuery('#ccc-icon').hide();
 
 
 
- <?php echo $__env->make('masters.footerNoMenu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?> 
-
-
-
-
-
-
-
-
+ @include('masters.footerNoMenu') 
 

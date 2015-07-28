@@ -41,6 +41,8 @@ Route::resource('team', 'PitchersController');
 
 Route::resource('documents', 'DocumentController');
 
+Route::resource('answers', 'AnswerController');
+
 Route::resource('reasons', 'ReasonsController');
 
 Route::resource('/', 'HomeController');

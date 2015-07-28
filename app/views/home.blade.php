@@ -48,13 +48,6 @@
   
   
       <div class="view-content">
-        
-
-
-
-
-
-
 
 
 <div class="view-content">
@@ -62,9 +55,9 @@
     
   <div class="col-sm-6">
      <div class="nodewrap__teaser">
-     <a href="pledges" class="nodewrap__title--link"></a>
+     <a href="answers" class="nodewrap__title--link"></a>
               <div class="nodewrap__title">
-      <h3 property="dc:title" datatype="">Pledges</h3>
+      <h3 property="dc:title" datatype="">Q&A</h3>
       </div>
         
     <div class="field field-name-field-thumbnail-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even" rel="" resource="uploads/{{$pitch->pledges_image}}"><img typeof="foaf:Image" src="uploads/{{$pitch->pledges_image}}" width="480" height="350" alt=""></div></div></div><span property="dc:title" content="Pledges" class="rdf-meta"></span>    </div>
