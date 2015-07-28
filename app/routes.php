@@ -64,7 +64,7 @@ Route::get('/logout', function()
 
 
 
-Route::group(array('domain' => '{pitch}.achievement-through-partnership.co.uk'), function()
+/*Route::group(array('domain' => '{pitch}.achievement-through-partnership.co.uk'), function()
 {
 -
 
@@ -74,3 +74,4 @@ Route::group(array('domain' => '{pitch}.achievement-through-partnership.co.uk'),
         // ...
     });
 });
+*/
