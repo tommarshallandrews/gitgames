@@ -59,10 +59,19 @@ return array(
 	 *
 	 * @type closure
 	 */
-	'permission'=> function()
-	{
-		return true;
-	},
+
+
+	'permission' => function()
+{
+    $user = Auth::user();
+
+    if (!$user->type = 'admin')
+    {
+        Redirect::route('users.login');
+    } else {
+    	return true;
+    }
+},
 
 	/**
 	 * This determines if you will have a dashboard (whose view you provide in the dashboard_view option) or a non-dashboard home
@@ -84,7 +93,7 @@ return array(
 	 *
 	 * @type string
 	 */
-	'home_page' => '',
+	'home_page' => 'pitches',
 
 	/**
 	 * The route to which the user will be taken when they click the "back to site" button
@@ -98,7 +107,7 @@ return array(
 	 *
 	 * @type string
 	 */
-	'login_path' => 'user/login',
+	'login_path' => 'users/login',
 
 	/**
 	 * The logout path is the path where Administrator will send the user when they click the logout link
