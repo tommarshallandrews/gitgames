@@ -21,10 +21,9 @@
 <link rel="shortcut icon" href="http://www.axa-anewlevel.co.uk/sites/clpitch.vded-ll-003.servers.wirehive.net/files/favicon.ico" type="image/vnd.microsoft.icon" />
 <meta property="og:title" content="Pledges" />
 <meta property="og:type" content="article" />
-<meta name="generator" content="Drupal 7 (http://drupal.org)" />
 <link rel="canonical" href="http://www.axa-anewlevel.co.uk/pledges" />
 <link rel="shortlink" href="http://www.axa-anewlevel.co.uk/pledges" />
-  <title>Pledges | Cunningham Lindsey</title>
+  <title>{{$pitch->title}} | Cunningham Lindsey</title>
   <link type="text/css" rel="stylesheet" href="http://www.axa-anewlevel.co.uk/sites/clpitch.vded-ll-003.servers.wirehive.net/files/css/css_ogjvJnfni1_P_WxvXAHlUOgCs860b3ip9DNMapcIGeM.css" media="all" />
 <link type="text/css" rel="stylesheet" href="http://www.axa-anewlevel.co.uk/sites/clpitch.vded-ll-003.servers.wirehive.net/files/css/css_4PXfoexywb5i3SBIli6MpUmCNad8ebiYm-1A_fx0Q3w.css" media="all" />
 <link type="text/css" rel="stylesheet" href="http://www.axa-anewlevel.co.uk/sites/clpitch.vded-ll-003.servers.wirehive.net/files/css/css_47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU.css" media="screen" />
