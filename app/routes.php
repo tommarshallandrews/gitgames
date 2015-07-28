@@ -64,13 +64,13 @@ Route::get('/logout', function()
 
 
 
-Route::group(array('domain' => '{user}.footprintflowers.co.uk'), function()
+Route::group(array('domain' => '{pitch}.achievement-through-partnership.co.uk'), function()
 {
 -
 
-    Route::get('/pitch', function($user) {
+    Route::get('/pitch', function($pitch) {
 
-    	return "Hello to $username";
+    	return "Hello to $pitch";
         // ...
     });
 });
