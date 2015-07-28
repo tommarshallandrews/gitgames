@@ -172,6 +172,242 @@ return array(
 
 
 
+		 'file5' => array(
+    		'title' => 'File 5',
+		    'type' => 'file',
+		    'location' => public_path() . '/uploads/',
+		    'naming' => 'keep',
+		    'length' => 20,
+		    'size_limit' => 200,
+		    'mimes' => 'pdf,psd,doc,docx,xls,xlsx,mov,mp4',
+		),
+
+		 'filetitle5' => array(
+			'title' => 'File 5 Title',
+    		'type' => 'text',
+		    'mimes' => 'pdf,psd,doc,mov,mp4,xls,xlsx,docx',
+
+		),
+
+
+
+
+
+
+		 'file6' => array(
+    		'title' => 'File 6',
+		    'type' => 'file',
+		    'location' => public_path() . '/uploads/',
+		    'naming' => 'keep',
+		    'length' => 20,
+		    'size_limit' => 200,
+		    'mimes' => 'pdf,psd,doc,docx,xls,xlsx,mov,mp4',
+		),
+
+		 'filetitle6' => array(
+			'title' => 'File 6 Title',
+    		'type' => 'text',
+		    'mimes' => 'pdf,psd,doc,mov,mp4,xls,xlsx,docx',
+
+		),
+
+
+
+
+
+
+		 'file7' => array(
+    		'title' => 'File 7',
+		    'type' => 'file',
+		    'location' => public_path() . '/uploads/',
+		    'naming' => 'keep',
+		    'length' => 20,
+		    'size_limit' => 200,
+		    'mimes' => 'pdf,psd,doc,docx,xls,xlsx,mov,mp4',
+		),
+
+		 'filetitle7' => array(
+			'title' => 'File 7 Title',
+    		'type' => 'text',
+		    'mimes' => 'pdf,psd,doc,mov,mp4,xls,xlsx,docx',
+
+		),
+
+
+
+
+
+		 'file8' => array(
+    		'title' => 'File 8',
+		    'type' => 'file',
+		    'location' => public_path() . '/uploads/',
+		    'naming' => 'keep',
+		    'length' => 20,
+		    'size_limit' => 200,
+		    'mimes' => 'pdf,psd,doc,docx,xls,xlsx,mov,mp4',
+		),
+
+		 'filetitle8' => array(
+			'title' => 'File 8 Title',
+    		'type' => 'text',
+		    'mimes' => 'pdf,psd,doc,mov,mp4,xls,xlsx,docx',
+
+		),
+
+
+
+
+
+		 'file9' => array(
+    		'title' => 'File 9',
+		    'type' => 'file',
+		    'location' => public_path() . '/uploads/',
+		    'naming' => 'keep',
+		    'length' => 20,
+		    'size_limit' => 200,
+		    'mimes' => 'pdf,psd,doc,docx,xls,xlsx,mov,mp4',
+		),
+
+		 'filetitle9' => array(
+			'title' => 'File 9 Title',
+    		'type' => 'text',
+		    'mimes' => 'pdf,psd,doc,mov,mp4,xls,xlsx,docx',
+
+		),
+
+
+
+
+
+		 'file10' => array(
+    		'title' => 'File 10',
+		    'type' => 'file',
+		    'location' => public_path() . '/uploads/',
+		    'naming' => 'keep',
+		    'length' => 20,
+		    'size_limit' => 200,
+		    'mimes' => 'pdf,psd,doc,docx,xls,xlsx,mov,mp4',
+		),
+
+		 'filetitle10' => array(
+			'title' => 'File 10 Title',
+    		'type' => 'text',
+		    'mimes' => 'pdf,psd,doc,mov,mp4,xls,xlsx,docx',
+
+		),
+
+
+
+
+
+		 'file11' => array(
+    		'title' => 'File 11',
+		    'type' => 'file',
+		    'location' => public_path() . '/uploads/',
+		    'naming' => 'keep',
+		    'length' => 20,
+		    'size_limit' => 200,
+		    'mimes' => 'pdf,psd,doc,docx,xls,xlsx,mov,mp4',
+		),
+
+		 'filetitle11' => array(
+			'title' => 'File 11 Title',
+    		'type' => 'text',
+		    'mimes' => 'pdf,psd,doc,mov,mp4,xls,xlsx,docx',
+
+		),
+
+
+
+
+
+
+		 'file12' => array(
+    		'title' => 'File 12',
+		    'type' => 'file',
+		    'location' => public_path() . '/uploads/',
+		    'naming' => 'keep',
+		    'length' => 20,
+		    'size_limit' => 200,
+		    'mimes' => 'pdf,psd,doc,docx,xls,xlsx,mov,mp4',
+		),
+
+		 'filetitle12' => array(
+			'title' => 'File 12 Title',
+    		'type' => 'text',
+		    'mimes' => 'pdf,psd,doc,mov,mp4,xls,xlsx,docx',
+
+		),
+
+
+
+
+
+
+		 'file13' => array(
+    		'title' => 'File 13',
+		    'type' => 'file',
+		    'location' => public_path() . '/uploads/',
+		    'naming' => 'keep',
+		    'length' => 20,
+		    'size_limit' => 200,
+		    'mimes' => 'pdf,psd,doc,docx,xls,xlsx,mov,mp4',
+		),
+
+		 'filetitle13' => array(
+			'title' => 'File 13 Title',
+    		'type' => 'text',
+		    'mimes' => 'pdf,psd,doc,mov,mp4,xls,xlsx,docx',
+
+		),
+
+
+
+
+
+
+		 'file14' => array(
+    		'title' => 'File 14',
+		    'type' => 'file',
+		    'location' => public_path() . '/uploads/',
+		    'naming' => 'keep',
+		    'length' => 20,
+		    'size_limit' => 200,
+		    'mimes' => 'pdf,psd,doc,docx,xls,xlsx,mov,mp4',
+		),
+
+		 'filetitle14' => array(
+			'title' => 'File 14 Title',
+    		'type' => 'text',
+		    'mimes' => 'pdf,psd,doc,mov,mp4,xls,xlsx,docx',
+
+		),
+
+
+
+
+
+
+		 'file15' => array(
+    		'title' => 'File 15',
+		    'type' => 'file',
+		    'location' => public_path() . '/uploads/',
+		    'naming' => 'keep',
+		    'length' => 20,
+		    'size_limit' => 200,
+		    'mimes' => 'pdf,psd,doc,docx,xls,xlsx,mov,mp4',
+		),
+
+		 'filetitle15' => array(
+			'title' => 'File 15 Title',
+    		'type' => 'text',
+		    'mimes' => 'pdf,psd,doc,mov,mp4,xls,xlsx,docx',
+
+		),
+
+
+
+
 
 
  

@@ -63,7 +63,9 @@
         @if (isset($answer->text))
        {{$answer->text}}
         @endif
-        
+
+
+
         @if ($answer->file)
         <div class="field-item even" rel="" resource="uploads/{{$answer->file}}">
         <span class="file"><img class="file-icon" alt="" title="application/{{pathinfo($answer->file, PATHINFO_EXTENSION);}}" src="file-type-icons/{{pathinfo($answer->file, PATHINFO_EXTENSION);}}.png" height="24px" width="24px">
@@ -71,31 +73,27 @@
         @endif
 
 
-        @if ($answer->file2)
-        <div class="field-item even" rel="" resource="uploads/{{$answer->file2}}">
-        <span class="file"><img class="file-icon" alt="" title="application/{{pathinfo($answer->file2, PATHINFO_EXTENSION);}}" src="file-type-icons/{{pathinfo($answer->file2, PATHINFO_EXTENSION);}}.png" height="24px" width="24px">
-        <a href="uploads/{{$answer->file2}}" type="application/pdf; length=5153333">{{$answer->filetitle2}}</a></span></div>
+        <?php 
+          $x = 2; 
+          while($x <= 15) {
+          $file = "file" . $x;
+          $filetitle = "filetitle" . $x
+          ?>
+
+
+
+        @if ($answer->$file)
+        <div class="field-item even" rel="" resource="uploads/{{$answer->$file}}">
+        <span class="file"><img class="file-icon" alt="" title="application/{{pathinfo($answer->$file, PATHINFO_EXTENSION);}}" src="file-type-icons/{{pathinfo($answer->$file, PATHINFO_EXTENSION);}}.png" height="24px" width="24px">
+        <a href="uploads/{{$answer->$file}}" type="application/pdf; length=5153333">{{$answer->$filetitle}}</a></span></div>
         @endif
 
-
-        @if ($answer->file3)
-        <div class="field-item even" rel="" resource="uploads/{{$answer->file3}}">
-        <span class="file"><img class="file-icon" alt="" title="application/{{pathinfo($answer->file3, PATHINFO_EXTENSION);}}" src="file-type-icons/{{pathinfo($answer->file3, PATHINFO_EXTENSION);}}.png" height="24px" width="24px">
-        <a href="uploads/{{$answer->file3}}" type="application/pdf; length=5153333">{{$answer->filetitle3}}</a></span></div>
-        @endif
-
-
-        @if ($answer->file4)
-        <div class="field-item even" rel="" resource="uploads/{{$answer->file4}}">
-        <span class="file"><img class="file-icon" alt="" title="application/{{pathinfo($answer->file4, PATHINFO_EXTENSION);}}" src="file-type-icons/{{pathinfo($answer->file4, PATHINFO_EXTENSION);}}.png" height="24px" width="24px">
-        <a href="uploads/{{$answer->file4}}" type="application/pdf; length=5153333">{{$answer->filetitle4}}</a></span></div>
-        @endif
-
-       
-
-
-
-
+          
+          <?php
+          $x++;
+          } 
+          ?>
+ 
 
 
 
