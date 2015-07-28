@@ -64,7 +64,7 @@
 
     <div class="navbar-header">
             <a class=" pull-left" href="/" title="Home">
-        <img src="/uploads/{{$pitch->image}}" alt="Home" />
+        <img src="uploads/{{$pitch->image}}" alt="Home" class="client-logo"/>
       </a>
       
     </div>

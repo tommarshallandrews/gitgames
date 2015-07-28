@@ -7,3 +7,24 @@
   display: -ms-flexbox;
   display:         flex;
 }
+
+
+
+
+
+@media (max-width: 700px) {
+    .client-logo {
+        width: 50%;
+        vertical-align: middle;
+    }
+
+    .navbar-default {
+    height: 70px;
+	}
+
+	.navbar:after {
+    background-position: 25% 0%;
+	}
+}
+
+
