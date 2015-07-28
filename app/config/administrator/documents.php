@@ -100,7 +100,7 @@ return array(
 		    'location' => public_path() . '/uploads/',
 		    'naming' => 'keep',
 		    'length' => 20,
-		    'size_limit' => 2,
+		    'size_limit' => 200,
 		    'mimes' => 'pdf,psd,doc',
 		),
 

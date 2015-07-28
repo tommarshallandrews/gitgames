@@ -83,7 +83,7 @@ return array(
     		'location' => public_path() . '/uploads/',
     		'naming' => 'keep',
     		'length' => 20,
-    		'size_limit' => 20,
+    		'size_limit' => 200,
 		),
 
 		'pledges_image' => array(
@@ -92,7 +92,7 @@ return array(
     		'location' => public_path() . '/uploads/',
     		'naming' => 'keep',
     		'length' => 20,
-    		'size_limit' => 20,
+    		'size_limit' => 200,
 		),
 
 		'why_image' => array(
@@ -101,7 +101,7 @@ return array(
     		'location' => public_path() . '/uploads/',
     		'naming' => 'keep',
     		'length' => 20,
-    		'size_limit' => 20,
+    		'size_limit' => 200,
 		),
 
 		'team_image' => array(
@@ -110,7 +110,7 @@ return array(
     		'location' => public_path() . '/uploads/',
     		'naming' => 'keep',
     		'length' => 20,
-    		'size_limit' => 20,
+    		'size_limit' => 200,
 		),
 
 		'document_image' => array(
@@ -119,7 +119,7 @@ return array(
     		'location' => public_path() . '/uploads/',
     		'naming' => 'keep',
     		'length' => 20,
-    		'size_limit' => 20,
+    		'size_limit' => 200,
 		),
 
  

@@ -54,15 +54,15 @@
    
 
 
-  <div class="field-item even">
+
 <div class="col-sm-12 col-md-6">
-<div class="nodewrap__fields clearfix" style="height: 430px;">    
+<div class="nodewrap__fields clearfix" >    
     <div class="field field-name-field-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="uploads/{{$reason->image}}" width="200" height="252" alt="" class="loaded"></div></div></div><div class="field field-name-field-title field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">{{$reason->title}}</div></div></div><div class="field field-name-field-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p><strong>{{$reason->job}}</strong></p>
 <p>{{$reason->text}}</p>
 
 </div></div></div></div>
 </div>
-</div>
+
   
 
 
@@ -75,6 +75,13 @@
     
   </div>
 </div>
+
+
+
+
+
+
+
 </div>
 
 <footer>

@@ -1,11 +1,18 @@
+
+html,body {
+    height:100%;
+}
+
+
+
 .formError{color:red;}
 
 
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
+
+
+.field-name-field-image img {
+    max-width: 200px;
+    height: auto;
 }
 
 
@@ -25,6 +32,17 @@
 	.navbar:after {
     background-position: 25% 0%;
 	}
+
+
+
+
+}
+
+@media (min-width: 990px) {
+
+
+	.nodewrap__fields {height: 430px}  
+
 }
 
 
