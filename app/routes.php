@@ -64,11 +64,4 @@ Route::get('/logout', function()
 
 
 
-Route::group(array('domain' => '{user}.footprintflowers.co.uk'), function()
-{
-   return $user;
 
-    Route::get('profile', function($user, $page) {
-        // ...
-    });
-});
