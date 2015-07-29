@@ -12,7 +12,7 @@ return array(
 
 	'model' => 'Answer',
 
-	 'form_width' => 600,
+	 'form_width' => 800,
 
 	/**
 	 * The display columns
@@ -34,6 +34,17 @@ return array(
 			'type' => 'text',
 		),
 
+		'whysection' => array(
+			'title' => 'Section',
+			'relationship' => 'whysection',
+			'select' => 'title',
+		),
+
+			'position' => array(
+			'title' => 'Position',
+			'type' => 'text',
+		),
+
 		
 	),
 
@@ -50,6 +61,12 @@ return array(
 		'pitch' => array(
     		'type' => 'relationship',
     		'title' => 'Pitch',
+    		'name_field' => 'title', //what column or accessor on the other table you want to use to represent this object
+    	),
+
+    	'whysection' => array(
+    		'type' => 'relationship',
+    		'title' => 'Section',
     		'name_field' => 'title', //what column or accessor on the other table you want to use to represent this object
     	),
 
@@ -83,21 +100,28 @@ return array(
     		'name_field' => 'title', //what column or accessor on the other table you want to use to represent this object
     	),
 
+    	'whysection' => array(
+    		'type' => 'relationship',
+    		'title' => 'Whysection',
+    		'name_field' => 'title', //what column or accessor on the other table you want to use to represent this object
+    	),
+
     	'position' => array(
 		    'type' => 'enum',
 		    'title' => 'Position',
-		    'options' => array('1', '2', '3', '4', '5', '6', '7', '8'), //must be an array
+		   'options' => array('1', '2', '3', '4', '5', '6', '7', '8','9','10','11','12','13','14','15','16','17','18','19','20'), //must be an array
 		),
 
     	'title' => array(
 			'title' => 'Question',
-    		'type' => 'text',
+    		'type' => 'wysiwyg',
+    		'height' => 70, //optional, defaults to 100
     	),
 
     	'text' => array(
 		'title' => 'Answer',
-    		 'type' => 'textarea',
-    		'height' => 130, //optional, defaults to 100
+    		 'type' => 'wysiwyg',
+    		'height' => 150, //optional, defaults to 100
     	),
 
 

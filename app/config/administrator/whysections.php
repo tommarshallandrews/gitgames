@@ -6,11 +6,11 @@
 
 return array(
 
-	'title' => 'Pitch Documents',
+	'title' => 'Why CL sections',
 
-	'single' => 'document',
+	'single' => 'Why section',
 
-	'model' => 'Document',
+	'model' => 'Whysection',
 
 	 'form_width' => 600,
 
@@ -20,13 +20,11 @@ return array(
 
 	'columns' => array(
 		
+		'id' => array(
+			'title' => 'ID',
+			'type' => 'text',
+		),	
 
-
-		'pitch' => array(
-			'title' => 'Pitch',
-			'relationship' => 'pitch',
-			'select' => 'title',
-		),
 
 
 		'title' => array(
@@ -34,7 +32,7 @@ return array(
 			'type' => 'text',
 		),
 
-			'position' => array(
+	'position' => array(
 			'title' => 'Position',
 			'type' => 'text',
 		),
@@ -51,22 +49,23 @@ return array(
 
 
 
+		'id',
 
-		'pitch' => array(
-    		'type' => 'relationship',
-    		'title' => 'Pitch',
-    		'name_field' => 'title', //what column or accessor on the other table you want to use to represent this object
-    	),
 
 		'title' => array(
-			'title' => 'Pledge Title',
+			'title' => 'Title',
 		),
 
+
 		'updated_at' => array(
-			'title' => 'Updated',
+			'title' => 'Order Updated',
 			'type' => 'date',
 			'date_format' => 'yy-mm-dd',
 		),
+
+
+
+
 
 
 	),
@@ -78,15 +77,16 @@ return array(
 
 
 
-		'pitch' => array(
-    		'type' => 'relationship',
-    		'title' => 'Pitch',
-    		'name_field' => 'title', //what column or accessor on the other table you want to use to represent this object
-    	),
-
     	'title' => array(
 			'title' => 'Title',
     		'type' => 'text',
+    	),
+
+
+    	'pitch' => array(
+    		'type' => 'relationship',
+    		'title' => 'Pitch',
+    		'name_field' => 'title', //what column or accessor on the other table you want to use to represent this object
     	),
 
     	    	 'position' => array(
@@ -94,22 +94,6 @@ return array(
 		    'title' => 'Position',
 		    'options' => array('1', '2', '3', '4', '5', '6', '7', '8','9','10','11','12','13','14','15','16','17','18','19','20'), //must be an array
 		),
-
-
-    	   'file' => array(
-		    'type' => 'file',
-		    'location' => public_path() . '/uploads/',
-		    'naming' => 'keep',
-		    'length' => 20,
-		    'size_limit' => 200,
-		    'mimes' => 'pdf,psd,doc,mov,mp4,xls,xlsx,docx,pptx',
-
-		),
-
-
-
-
-
 
  
     	'created_at' => array(

@@ -17,11 +17,24 @@ class answerController extends \BaseController {
 	{
 		//$makes = Make::where('zodiac_id','LIKE', $zodiac_id)	
 
-		$answers = Answer::where('pitch_id','=', Session::get('pitch'))
-		->orderby('position','ASC')
-        ->get();
 
-       $pitch = Pitch::where('id','=', Session::get('pitch'))
+
+		$answers = Answer::with('whysection')
+		->orderby('whysection_id','ASC')
+		->orderby('position','ASC')
+		->get();     
+
+
+        
+
+        //return $answers;
+
+      
+
+
+
+
+      	$pitch = Pitch::where('id','=', Session::get('pitch'))
         ->first();
 
 

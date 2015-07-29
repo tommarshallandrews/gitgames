@@ -34,6 +34,11 @@ return array(
 			'type' => 'text',
 		),
 
+			'position' => array(
+			'title' => 'Position',
+			'type' => 'text',
+		),
+
 		
 	),
 
@@ -103,7 +108,7 @@ return array(
     	 'position' => array(
 		    'type' => 'enum',
 		    'title' => 'Position',
-		    'options' => array('1', '2', '3', '4', '5', '6', '7', '8'), //must be an array
+		    'options' => array('1', '2', '3', '4', '5', '6', '7', '8','9','10','11','12','13','14','15','16','17','18','19','20'), //must be an array
 		),
 
 

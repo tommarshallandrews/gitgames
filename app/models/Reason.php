@@ -20,6 +20,12 @@ class Reason extends \Eloquent {
 	}
 
 
+		public function whysection()
+	{
+		return $this->belongsTo('Whysection');
+	}
+
+
 	//	public function billingAddress()
 	//{
 	//	return $this->hasMany('Order','id', 'billingAddress');

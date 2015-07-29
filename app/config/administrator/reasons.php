@@ -12,15 +12,13 @@ return array(
 
 	'model' => 'Reason',
 
-	 'form_width' => 600,
+	 'form_width' => 800,
 
 	/**
 	 * The display columns
 	 */
 
 	'columns' => array(
-		
-
 
 		'pitch' => array(
 			'title' => 'Pitch',
@@ -28,9 +26,12 @@ return array(
 			'select' => 'title',
 		),
 
-
 		'title' => array(
 			'title' => 'Question',
+			'type' => 'text',
+		),
+			'position' => array(
+			'title' => 'Position',
 			'type' => 'text',
 		),
 
@@ -83,10 +84,12 @@ return array(
     		'name_field' => 'title', //what column or accessor on the other table you want to use to represent this object
     	),
 
+
+
     	'position' => array(
 		    'type' => 'enum',
 		    'title' => 'Position',
-		    'options' => array('1', '2', '3', '4', '5', '6', '7', '8'), //must be an array
+		    'options' => array('1', '2', '3', '4', '5', '6', '7', '8','9','10','11','12','13','14','15','16','17','18','19','20'), //must be an array
 		),
 
     	'title' => array(
