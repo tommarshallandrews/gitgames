@@ -1,14 +1,20 @@
- <?php echo $__env->make('masters.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?> 
+ @include('masters.header') 
 
  
 
+
+            	
+
+
+                
+                
      
                 
 
 
 
 
-<body class="html not-front not-logged-in no-sidebars page-reasons" >
+<body class="html not-front not-logged-in no-sidebars page-pledges" >
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
   </div>
@@ -26,87 +32,41 @@
  </div>
 
   <header role="banner" id="page-header">
+
+
+
     
       </header> <!-- /#page-header -->
 
-  <div class="row">
-
-    
-            
+  <div class="row row-eq-height">
+   
       
-<div class="view view-reasons view-id-reasons view-display-id-page view-dom-id-92251a88589ab9ad6bd17f6f17e2249a">
+<div class="view view-pledges view-id-pledges view-display-id-page view-dom-id-92251a88589ab9ad6bd17f6f17e2249a">
         
   
   
       <div class="view-content">
         
 
-<?php foreach($reasons as $reason): ?>
+@foreach($reasons as $reason)
 
 
-        <div class="views-row views-row-1 views-row-odd views-row-first">
-        <div class="col-xl-12">
-    <div class="nodewrap__teaser--blog">
-     
-      <div class="col-xl-4">       
-         </div>
-    
-    <div class="col-xl-8">
-    <div class="blog__title">
-       <h3 property="schema:name" datatype="">
-    <?php echo $reason->title; ?> </h3> 
-
-    </div>    
-
-    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded">
-        
-        <?php if(isset($reason->text)): ?>
-       <?php echo $reason->text; ?>
-
-        <?php endif; ?>
+   
 
 
 
-        <?php if($reason->file): ?>
-        <div class="field-item even" rel="" resource="uploads/<?php echo $reason->file; ?>">
-        <span class="file"><img class="file-icon" alt="" title="application/<?php echo pathinfo($reason->file, PATHINFO_EXTENSION);; ?>" src="file-type-icons/<?php echo pathinfo($reason->file, PATHINFO_EXTENSION);; ?>.png" height="24px" width="24px">
-        <a href="uploads/<?php echo $reason->file; ?>" type="application/pdf; length=5153333"><?php echo $reason->filetitle; ?></a></span></div>
-        <?php endif; ?>
+<div class="col-sm-12 col-md-6">
+<div class="nodewrap__fields clearfix" >    
+    <div class="field field-name-field-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="uploads/{{$reason->image}}" width="200" height="252" alt="" class="loaded"></div></div></div><div class="field field-name-field-title field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">{{$reason->title}}</div></div></div><div class="field field-name-field-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p><strong>{{$reason->job}}</strong></p>
+<p>{{$reason->text}}</p>
 
+</div></div></div></div>
+</div>
 
-        <?php 
-          $x = 2; 
-          while($x <= 15) {
-          $file = "file" . $x;
-          $filetitle = "filetitle" . $x
-          ?>
-
-
-
-        <?php if($reason->$file): ?>
-        <div class="field-item even" rel="" resource="uploads/<?php echo $reason->$file; ?>">
-        <span class="file"><img class="file-icon" alt="" title="application/<?php echo pathinfo($reason->$file, PATHINFO_EXTENSION);; ?>" src="file-type-icons/<?php echo pathinfo($reason->$file, PATHINFO_EXTENSION);; ?>.png" height="24px" width="24px">
-        <a href="uploads/<?php echo $reason->$file; ?>" type="application/pdf; length=5153333"><?php echo $reason->$filetitle; ?></a></span></div>
-        <?php endif; ?>
-
-          
-          <?php
-          $x++;
-          } 
-          ?>
- 
-
-
-
-</div></div></div><span rel="schema:url" resource="/blog-entry/reason-1-well-put-customer-centre-everything-we-do" class="rdf-meta"></span><span property="schema:name" content="reason 1: We’ll put the customer at the centre of everything we do " class="rdf-meta"></span>   
-    </div>
-    </div>
-  </div>
-  </div>
   
 
 
-  <?php endforeach; ?>
+  @endforeach
   
   
   
@@ -115,6 +75,13 @@
     
   </div>
 </div>
+
+
+
+
+
+
+
 </div>
 
 <footer>
@@ -129,7 +96,7 @@
 </footer>
   <script src="http://www.axa-anewlevel.co.uk/sites/clpitch.vded-ll-003.servers.wirehive.net/files/js/js_h5pUc2x9Uh8Pl1QqK1Xj-8G295EapUWRnbPNEp5xuvA.js"></script>
 <script>
-    jQuery(reason).ready(function($) {
+    jQuery(document).ready(function($) {
     cookieControl({
         introText: '<p>This site uses cookies to store information on your computer.</p>',
         fullText: '<p>Some cookies used by this website are essential, and the website won\'t work as intended without them. These cookies are set when you submit a form, login or interact with the website by doing something that goes beyond clicking on simple links.</p><p>We also use <a href=\"http://www.google.com/analytics/learn/privacy.html\" target=\"_blank\">Google Analytics cookies</a> to anonymously track visitors.</p><p>By using our site you accept the terms of our <a href="/privacy-policy">Privacy Policy</a>.',
@@ -166,5 +133,5 @@ cc.setCookie('ccShowCookieIcon', 'no');jQuery('#ccc-icon').hide();
 
 
 
- <?php echo $__env->make('masters.footerNoMenu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?> 
+ @include('masters.footerNoMenu') 
 
