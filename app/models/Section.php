@@ -1,6 +1,6 @@
 <?php
 
-class Reason extends \Eloquent {
+class Section extends \Eloquent {
 
 	// Add your validation rules here
 	public static $rules = array(
@@ -20,22 +20,16 @@ class Reason extends \Eloquent {
 	}
 
 
-		public function Section()
-	{
-		return $this->belongsTo('Section');
-	}
-
-
 	//	public function billingAddress()
 	//{
 	//	return $this->hasMany('Order','id', 'billingAddress');
 	//}
 
 
-		//public function deliveryOrder()
-	//{
-		//return $this->hasMany('Order','id', 'billingAddress');
-	//}
+		public function answer()
+	{
+		return $this->hasMany('Answer');
+	}
 
 
 

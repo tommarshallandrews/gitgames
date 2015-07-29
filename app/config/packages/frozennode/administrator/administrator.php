@@ -54,8 +54,8 @@ return array(
 	'menu' => array(
 		'pitches',
 		'pitchers',
-		'answers',
-		'Why CL' => array('reasons','whysections'),
+		'Q&A' => array('answers','Sections'),
+		'reasons',
 		'promises',
 		'users'
 		),

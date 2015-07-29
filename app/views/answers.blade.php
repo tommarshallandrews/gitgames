@@ -5,7 +5,7 @@
      
                 
 
-
+<?php //return $answers[1]->Section; ?>
 
 
 <body class="html not-front not-logged-in no-sidebars page-answers" >
@@ -40,8 +40,19 @@
   
       <div class="view-content">
         
-
+<?php $lasttitle="xxx"; ?>
 @foreach($answers as $answer)
+
+
+    <?php
+    
+    if($answer->section_id != $lasttitle){
+      ?>
+    <h1>SECTION {{$answer->section_id}} (NAME TO FOLLOW)</h1>
+    <?php
+    }
+    $lasttitle=$answer->section_id
+    ?>
 
 
         <div class="views-row views-row-1 views-row-odd views-row-first">
@@ -58,9 +69,10 @@
 
     </div>    
 
+
     <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded">
         
-        @if (isset($answer->text))
+        @if ($answer->text)
        {{$answer->text}}
         @endif
 
@@ -78,7 +90,7 @@
           while($x <= 15) {
           $file = "file" . $x;
           $filetitle = "filetitle" . $x
-          ?>
+        ?>
 
 
 

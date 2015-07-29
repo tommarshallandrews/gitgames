@@ -19,29 +19,26 @@ class answerController extends \BaseController {
 
 
 
-		$answers = Answer::with('whysection')
-		->orderby('whysection_id','ASC')
+		$answers = Answer::with('Section','pitch')
+		->where('pitch_id','=', Session::get('pitch'))
+		->where('section_id','<>', 'null')
+		->orderby('section_id','Asc')
 		->orderby('position','ASC')
 		->get();     
 
-
         
 
-        //return $answers;
+        //return $answers[0]->pitch->title;
 
       
 
 
 
 
-      	$pitch = Pitch::where('id','=', Session::get('pitch'))
-        ->first();
-
-
 		    //$Billingpledges = Address::all();
     		//return $pledges;
         //return $answer;
-		return View::make('answers', compact('answers','pitch'));
+		return View::make('answers', compact('answers'));
 	}
 
 

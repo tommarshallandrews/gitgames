@@ -34,9 +34,9 @@ return array(
 			'type' => 'text',
 		),
 
-		'whysection' => array(
+		'Section' => array(
 			'title' => 'Section',
-			'relationship' => 'whysection',
+			'relationship' => 'Section',
 			'select' => 'title',
 		),
 
@@ -64,7 +64,7 @@ return array(
     		'name_field' => 'title', //what column or accessor on the other table you want to use to represent this object
     	),
 
-    	'whysection' => array(
+    	'Section' => array(
     		'type' => 'relationship',
     		'title' => 'Section',
     		'name_field' => 'title', //what column or accessor on the other table you want to use to represent this object
@@ -100,9 +100,9 @@ return array(
     		'name_field' => 'title', //what column or accessor on the other table you want to use to represent this object
     	),
 
-    	'whysection' => array(
+    	'Section' => array(
     		'type' => 'relationship',
-    		'title' => 'Whysection',
+    		'title' => 'Section',
     		'name_field' => 'title', //what column or accessor on the other table you want to use to represent this object
     	),
 

@@ -20,9 +20,9 @@ class Answer extends \Eloquent {
 	}
 
 
-	public function whysection()
+	public function section()
 	{
-		return $this->belongsTo('Whysection');
+		return $this->belongsTo('Section');
 	}
 
 
