@@ -81,18 +81,19 @@
 
 
 
-        @if ($reason->file)
+        @if($reason->file)
 
-           <?php 
+          <?php 
           $path = "";
-          if (strpos($reason->file,'http') == false) {
-            $path == "uploads/";
+          $thisfile = $reason->file;
+          if (strpos($thisfile,'cunninghamlindsey.co.uk')== false) {
+            $path = "uploads/";
           }
           ?>
 
         <div class="field-item even" rel="" resource="uploads/{{$reason->file}}">
         <span class="file"><img class="file-icon" alt="" title="application/{{pathinfo($reason->file, PATHINFO_EXTENSION);}}" src="file-type-icons/{{pathinfo($reason->file, PATHINFO_EXTENSION);}}.png" height="24px" width="24px">
-        <a href="{{$path}}{{$reason->file}}" type="application/pdf; length=5153333">{{$path}}{{$reason->filetitle}}</a></span></div>
+        <a href="{{$path}}{{$reason->file}}" type="application/pdf; length=5153333">{{$reason->filetitle}}</a></span></div>
         @endif
 
 
@@ -105,20 +106,21 @@
 
 
 
-        @if ($reason->$file)
+        @if($reason->$file)
+
 
 
           <?php 
           $path = "";
-          if (strpos($reason->file,'http') == false) {
+          $thisfile = $reason->$file;
+          if (strpos($thisfile,'cunninghamlindsey.co.uk')== false) {
             $path = "uploads/";
-
           }
           ?>
 
         <div class="field-item even" rel="" resource="uploads/{{$reason->$file}}">
         <span class="file"><img class="file-icon" alt="" title="application/{{pathinfo($reason->$file, PATHINFO_EXTENSION);}}" src="file-type-icons/{{pathinfo($reason->$file, PATHINFO_EXTENSION);}}.png" height="24px" width="24px">
-        <a href="{{$path}}{{$reason->$file}}" type="application/pdf; length=5153333">{{$path}}{{$reason->$filetitle}}</a></span></div>
+        <a href="{{$path}}{{$reason->$file}}" type="application/pdf; length=5153333">{{$reason->$filetitle}}</a></span></div>
         @endif
 
           
