@@ -54,6 +54,7 @@ return array(
 	'menu' => array(
 		'pitches',
 		'pitchers',
+		'documents',
 		'Q&A' => array('answers','Sections'),
 		'reasons',
 		'promises',
