@@ -83,10 +83,10 @@
 
         @if ($reason->file)
 
-          <?php 
+           <?php 
           $path = "";
-          if (strpos($reason->file,'https') == false) {
-            $path = "uploads/";
+          if (strpos($reason->file,'http') == false) {
+            $path == "uploads/";
           }
           ?>
 
@@ -110,8 +110,9 @@
 
           <?php 
           $path = "";
-          if (strpos($reason->file,'https') == false) {
+          if (strpos($reason->file,'http') == false) {
             $path = "uploads/";
+
           }
           ?>
 
