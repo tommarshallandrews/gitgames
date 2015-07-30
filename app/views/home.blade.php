@@ -53,6 +53,33 @@
 <div class="view-content">
         <div class="views-row views-row-1 views-row-odd views-row-first">
     
+
+  <div class="col-sm-6">
+     <div class="nodewrap__teaser">
+     <a href="documents" class="nodewrap__title--link"></a>
+              <div class="nodewrap__title">
+      <h3 property="dc:title" datatype="">Presentation Document</h3>
+      </div>
+        
+    <div class="field field-name-field-thumbnail-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even" rel="" resource="uploads/{{$pitch->document_image}}"><img typeof="foaf:Image" src="uploads/{{$pitch->document_image}}" width="480" height="350" alt=""></div></div></div><span property="dc:title" content="Pitch Document" class="rdf-meta"></span>    </div>
+  </div>
+  </div>
+    </div>
+
+
+  <div class="col-sm-6">
+     <div class="nodewrap__teaser">
+     <a href="team" class="nodewrap__title--link"></a>
+              <div class="nodewrap__title">
+      <h3 property="dc:title" datatype="">The Presentation Team</h3>
+      </div>
+        
+    <div class="field field-name-field-thumbnail-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even" rel="" resource="uploads/{{$pitch->team_image}}"><img typeof="foaf:Image" src="uploads/{{$pitch->team_image}}" width="480" height="350" alt=""></div></div></div><span property="dc:title" content="The Pitch Team" class="rdf-meta"></span>    </div>
+  </div>
+  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    
+
   <div class="col-sm-6">
      <div class="nodewrap__teaser">
      <a href="answers" class="nodewrap__title--link"></a>
@@ -65,18 +92,9 @@
   </div>
   <div class="views-row views-row-2 views-row-even">
     
-  <div class="col-sm-6">
-     <div class="nodewrap__teaser">
-     <a href="team" class="nodewrap__title--link"></a>
-              <div class="nodewrap__title">
-      <h3 property="dc:title" datatype="">The Pitch Team</h3>
-      </div>
-        
-    <div class="field field-name-field-thumbnail-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even" rel="" resource="uploads/{{$pitch->team_image}}"><img typeof="foaf:Image" src="uploads/{{$pitch->team_image}}" width="480" height="350" alt=""></div></div></div><span property="dc:title" content="The Pitch Team" class="rdf-meta"></span>    </div>
-  </div>
-  </div>
-  <div class="views-row views-row-3 views-row-odd">
-    
+
+
+
   <div class="col-sm-6">
      <div class="nodewrap__teaser">
      <a href="reasons" class="nodewrap__title--link"></a>
@@ -89,17 +107,10 @@
   </div>
   <div class="views-row views-row-4 views-row-even views-row-last">
     
-  <div class="col-sm-6">
-     <div class="nodewrap__teaser">
-     <a href="documents" class="nodewrap__title--link"></a>
-              <div class="nodewrap__title">
-      <h3 property="dc:title" datatype="">Pitch Document</h3>
-      </div>
-        
-    <div class="field field-name-field-thumbnail-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even" rel="" resource="uploads/{{$pitch->document_image}}"><img typeof="foaf:Image" src="uploads/{{$pitch->document_image}}" width="480" height="350" alt=""></div></div></div><span property="dc:title" content="Pitch Document" class="rdf-meta"></span>    </div>
-  </div>
-  </div>
-    </div>
+
+
+
+
 
 
 

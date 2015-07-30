@@ -46,12 +46,12 @@
 
     <?php
     
-    if($answer->section_id != $lasttitle){
+    if($answer->section->title != $lasttitle){
       ?>
-    <h1>SECTION {{$answer->section_id}} (NAME TO FOLLOW)</h1>
+    <h1>{{$answer->section->title}}</h1>
     <?php
     }
-    $lasttitle=$answer->section_id
+    $lasttitle=$answer->section->title
     ?>
 
 

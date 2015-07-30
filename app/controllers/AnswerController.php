@@ -19,7 +19,7 @@ class answerController extends \BaseController {
 
 
 
-		$answers = Answer::with('Section','pitch')
+		$answers = Answer::has('section')->with('section','pitch')
 		->where('pitch_id','=', Session::get('pitch'))
 		->where('section_id','<>', 'null')
 		->orderby('section_id','Asc')

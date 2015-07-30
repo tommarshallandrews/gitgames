@@ -5,6 +5,24 @@ html,body {
 
 
 
+h1 {
+    color: #383838;
+    font-size: 225%;
+    margin: 0.2em 0 0.5em 0;
+    padding: 0 0 0.2em 0;
+    line-height: 1.1em;
+    font-family: Trebuchet MS;
+    border-bottom: 3px solid #e85100;
+}
+
+
+h3 {
+    color: #383838;
+    font-family: Trebuchet MS;
+
+}
+
+
 .formError{color:red;}
 
 
