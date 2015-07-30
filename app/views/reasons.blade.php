@@ -39,6 +39,19 @@
   
   
       <div class="view-content">
+
+
+
+
+        <?php $lasttitle="xxx"; ?>
+ @foreach($reasons as $reason) 
+
+
+
+      <a class="btn btn-default" href="#{{$reason->id}}">{{$reason->title}}</a>
+ 
+  @endforeach
+  <br><br>
         
 
 @foreach($reasons as $reason)
@@ -53,8 +66,7 @@
     
     <div class="col-xl-8">
     <div class="blog__title">
-       <h3 property="schema:name" datatype="">
-    {{$reason->title}} </h3> 
+       <h3 property="schema:name" datatype="" id="{{$reason->id}}">{{$reason->title}} </h3> 
 
     </div>    
 
@@ -66,10 +78,21 @@
 
 
 
+
+
+
         @if ($reason->file)
+
+          <?php 
+          $path = "";
+          if (strpos($reason->file,'https') == false) {
+            $path = "uploads/";
+          }
+          ?>
+
         <div class="field-item even" rel="" resource="uploads/{{$reason->file}}">
         <span class="file"><img class="file-icon" alt="" title="application/{{pathinfo($reason->file, PATHINFO_EXTENSION);}}" src="file-type-icons/{{pathinfo($reason->file, PATHINFO_EXTENSION);}}.png" height="24px" width="24px">
-        <a href="uploads/{{$reason->file}}" type="application/pdf; length=5153333">{{$reason->filetitle}}</a></span></div>
+        <a href="{{$path}}{{$reason->file}}" type="application/pdf; length=5153333">{{$path}}{{$reason->filetitle}}</a></span></div>
         @endif
 
 
@@ -77,15 +100,24 @@
           $x = 2; 
           while($x <= 15) {
           $file = "file" . $x;
-          $filetitle = "filetitle" . $x
+          $filetitle = "filetitle" . $x;
           ?>
 
 
 
         @if ($reason->$file)
+
+
+          <?php 
+          $path = "";
+          if (strpos($reason->file,'https') == false) {
+            $path = "uploads/";
+          }
+          ?>
+
         <div class="field-item even" rel="" resource="uploads/{{$reason->$file}}">
         <span class="file"><img class="file-icon" alt="" title="application/{{pathinfo($reason->$file, PATHINFO_EXTENSION);}}" src="file-type-icons/{{pathinfo($reason->$file, PATHINFO_EXTENSION);}}.png" height="24px" width="24px">
-        <a href="uploads/{{$reason->$file}}" type="application/pdf; length=5153333">{{$reason->$filetitle}}</a></span></div>
+        <a href="{{$path}}{{$reason->$file}}" type="application/pdf; length=5153333">{{$path}}{{$reason->$filetitle}}</a></span></div>
         @endif
 
           

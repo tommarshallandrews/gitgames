@@ -39,6 +39,19 @@
   
   
       <div class="view-content">
+
+
+
+
+        <?php $lasttitle="xxx"; ?>
+ <?php foreach($reasons as $reason): ?> 
+
+
+
+      <a class="btn btn-default" href="#<?php echo $reason->id; ?>"><?php echo $reason->title; ?></a>
+ 
+  <?php endforeach; ?>
+  <br><br>
         
 
 <?php foreach($reasons as $reason): ?>
@@ -53,8 +66,7 @@
     
     <div class="col-xl-8">
     <div class="blog__title">
-       <h3 property="schema:name" datatype="">
-    <?php echo $reason->title; ?> </h3> 
+       <h3 property="schema:name" datatype="" id="<?php echo $reason->id; ?>"><?php echo $reason->title; ?> </h3> 
 
     </div>    
 
@@ -67,10 +79,21 @@
 
 
 
+
+
+
         <?php if($reason->file): ?>
+
+          <?php 
+          $path = "";
+          if (strpos($reason->file,'https') == false) {
+            $path = "uploads/";
+          }
+          ?>
+
         <div class="field-item even" rel="" resource="uploads/<?php echo $reason->file; ?>">
         <span class="file"><img class="file-icon" alt="" title="application/<?php echo pathinfo($reason->file, PATHINFO_EXTENSION);; ?>" src="file-type-icons/<?php echo pathinfo($reason->file, PATHINFO_EXTENSION);; ?>.png" height="24px" width="24px">
-        <a href="uploads/<?php echo $reason->file; ?>" type="application/pdf; length=5153333"><?php echo $reason->filetitle; ?></a></span></div>
+        <a href="<?php echo $path; ?><?php echo $reason->file; ?>" type="application/pdf; length=5153333"><?php echo $path; ?><?php echo $reason->filetitle; ?></a></span></div>
         <?php endif; ?>
 
 
@@ -78,15 +101,24 @@
           $x = 2; 
           while($x <= 15) {
           $file = "file" . $x;
-          $filetitle = "filetitle" . $x
+          $filetitle = "filetitle" . $x;
           ?>
 
 
 
         <?php if($reason->$file): ?>
+
+
+          <?php 
+          $path = "";
+          if (strpos($reason->file,'https') == false) {
+            $path = "uploads/";
+          }
+          ?>
+
         <div class="field-item even" rel="" resource="uploads/<?php echo $reason->$file; ?>">
         <span class="file"><img class="file-icon" alt="" title="application/<?php echo pathinfo($reason->$file, PATHINFO_EXTENSION);; ?>" src="file-type-icons/<?php echo pathinfo($reason->$file, PATHINFO_EXTENSION);; ?>.png" height="24px" width="24px">
-        <a href="uploads/<?php echo $reason->$file; ?>" type="application/pdf; length=5153333"><?php echo $reason->$filetitle; ?></a></span></div>
+        <a href="<?php echo $path; ?><?php echo $reason->$file; ?>" type="application/pdf; length=5153333"><?php echo $path; ?><?php echo $reason->$filetitle; ?></a></span></div>
         <?php endif; ?>
 
           
