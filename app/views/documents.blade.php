@@ -55,8 +55,15 @@
 <div class="field-item even" rel="" resource="uploads/{{$document->file}}">
 <span class="file"><img class="file-icon" alt="" title="application/{{pathinfo($document->file, PATHINFO_EXTENSION);}}" src="file-type-icons/{{pathinfo($document->file, PATHINFO_EXTENSION);}}.png" height="24px" width="24px">
 
+          <?php 
+          $path = "";
+          $thisfile = $document->file;
+          if (strpos($thisfile,'cunninghamlindsey.co.uk')== false) {
+            $path = "uploads/";
+          }
+          ?>
   
-  <a href="uploads/{{$document->file}}" type="application/pdf; length=5153333">{{$document->title}}</a></span></div>
+  <a href="{{$path}}{{$document->file}}" type="application/pdf; length=5153333">{{$document->title}}</a></span></div>
 
 
   @endforeach
