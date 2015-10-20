@@ -63,12 +63,23 @@ return array(
 			'prefix'    => '',
 		),*/
 
-			'mysql' => array(
+			'mysql-allienz' => array(
 			'driver'    => 'mysql',
 			'host'      => 'mysql.welcometothenetwork.com',
 			'database'  => 'clpitch',
 			'username'  => 'clpitch',
 			'password'  => 'Jnwx63!7',
+			'charset'   => 'utf8',
+			'collation' => 'utf8_unicode_ci',
+			'prefix'    => '',
+		),
+		
+			'mysql' => array(
+			'driver'    => 'mysql',
+			'host'      => 'mysql.welcometothenetwork.com',
+			'database'  => 'westpack',
+			'username'  => 'westpack',
+			'password'  => 'Jcyc46$5',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
